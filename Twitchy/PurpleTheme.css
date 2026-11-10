@@ -1,0 +1,32 @@
+/* Twitchy purple theme: swaps Twitch's dark greys for deep purples.
+   Twitch's colours come from CSS variables, so overriding them recolours the whole site.
+   Tweak the hex values below to adjust the shades. */
+
+:root,
+html.tw-root--theme-dark,
+.tw-root--theme-dark {
+  --color-background-body: #0e0918 !important;
+  --color-background-base: #140c22 !important;
+  --color-background-alt: #1b112e !important;
+  --color-background-alt-2: #23173b !important;
+  --color-background-float: #1d1331 !important;
+  --color-background-float-alt: #251940 !important;
+  --color-background-input: #180f28 !important;
+  --color-background-input-focus: #1d1331 !important;
+  --color-background-tooltip: #2a1d47 !important;
+  --color-background-interactable-hover: rgba(145, 71, 255, 0.15) !important;
+  --color-background-interactable-active: rgba(145, 71, 255, 0.25) !important;
+  --color-border-base: #2e2048 !important;
+  --color-border-input: #3a2a5c !important;
+}
+
+/* Fallbacks for areas that use fixed colours instead of the variables */
+html,
+body {
+  background-color: #0e0918 !important;
+}
+
+/* Scrollbars */
+::-webkit-scrollbar-thumb {
+  background-color: #3a2a5c !important;
+}
